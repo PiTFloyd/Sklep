@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-yellow-50: #fffbeb;
+  --color-brand-yellow-100: #fef3c7;
+  --color-brand-yellow-300: #fde047;
+  --color-brand-yellow-400: #FFE200;
+  --color-brand-yellow-500: #E5CB00;
+  --color-brand-yellow-600: #CCB400;
+  
+  --color-brand-dark-950: #000000;
+  --color-brand-dark-900: #121214;
+  --color-brand-dark-800: #1e1e21;
+  --color-brand-dark-700: #2a2a2e;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark-950 text-zinc-100 font-sans antialiased selection:bg-brand-yellow-400 selection:text-brand-dark-950;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-black tracking-tighter uppercase;
+  }
+}
+
+/* Custom modern scrollbars in brutalist black-and-yellow */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-yellow-400 border-2 border-black rounded-none hover:bg-brand-yellow-500 transition-colors;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Sklep z Grami Planszowymi",
+  "description": "Kompleksowy sklep internetowy z grami planszowymi z systemem zamówień i panelem administratora.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
